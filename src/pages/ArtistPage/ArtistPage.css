@@ -1,0 +1,25 @@
+.artist-page {
+  display: flex;
+}
+
+.artist-page div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: max(60%, 400px);
+  background-color: #eeeeee;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.artist-page section {
+  display: flex;
+  justify-content: flex-end;
+}
+.artist-page button {
+  text-align: right;
+  margin: 20px;
+  color: #222831;
+  font-size: 20px;
+  cursor: pointer;
+}

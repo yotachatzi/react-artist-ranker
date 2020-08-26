@@ -1,0 +1,78 @@
+.artist-list-item {
+  display: flex;
+  padding-bottom: 3px;
+  justify-content: center;
+  width: max(59.7%, 400px);
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #eeeeee;
+  color: #222831;
+}
+
+.artist-list-item a {
+  color: #222831;
+  text-decoration: none;
+  display: inline-block;
+  text-align: left!important;
+}
+.artist-list-item section {
+  width: 40%;
+  display: flex;
+}
+
+.artist-list-item:first-child {
+  padding-top: 50px
+}
+.artist-list-item:last-child {
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.stars {
+  width: 15%!important;
+  display: flex;
+}
+
+.artist-list-item div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.button-group {
+  width: 100px!important;
+}
+
+.artist-list-item button {
+  border: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display:inline-block;
+  padding:0.3em 0.6em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.15em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-size: 20px;
+  font-family:'Roboto',sans-serif;
+  text-transform:uppercase;
+  font-weight:400;
+  color:#FFFFFF;
+  background-color:#222831;
+  box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  text-align:center;
+  position:relative;
+  cursor: pointer;
+}
+
+.artist-list-item button {
+  top:0.1em;
+}
+@media all and (max-width:30em){
+  .artist-list-item button{
+    display:block;
+    margin:0.4em auto;
+  }
+}

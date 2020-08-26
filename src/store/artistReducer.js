@@ -16,10 +16,6 @@ function artistReducer(stateDraft, action) {
       };
 
       stateDraft.artists.push(artist);
-
-      // const { artists } = stateDraft;
-      // localStorage.setItem('artists', JSON.stringify(artists));
-
       return;
     }
     case 'UPVOTE_ARTIST': {
@@ -28,8 +24,6 @@ function artistReducer(stateDraft, action) {
       const artistIndex = stateDraft.artists.indexOf(artist);
       stateDraft.artists[artistIndex] = { ...artist, stars: artist.stars + 1 };
 
-      // const { artists } = stateDraft;
-      // localStorage.setItem('artists', JSON.stringify(artists));
       return;
     }
     case 'DOWNVOTE_ARTIST': {
@@ -39,8 +33,6 @@ function artistReducer(stateDraft, action) {
 
       stateDraft.artists[artistIndex] = { ...artist, stars: artist.stars - 1 };
 
-      // const { artists } = stateDraft;
-      // localStorage.setItem('artists', JSON.stringify(artists));
       return;
     }
 
@@ -50,8 +42,6 @@ function artistReducer(stateDraft, action) {
       const artistIndex = stateDraft.artists.indexOf(artist);
       stateDraft.artists[artistIndex] = editedArtist;
 
-      // const { artists } = stateDraft;
-      // localStorage.setItem('artists', JSON.stringify(artists));
       return;
     }
     default:

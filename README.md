@@ -1,5 +1,8 @@
 React Application with Context API and hooks
 
+Open [https://artist-ranker.herokuapp.com/](https://artist-ranker.herokuapp.com/) to view it live in the browser.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
